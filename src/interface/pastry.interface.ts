@@ -8,5 +8,5 @@ export interface IPastry extends Document{
     readonly url: string;
     readonly quantity: number;
     readonly order: number;
-    readonly tags: string[];
+    readonly tags: string;
 }

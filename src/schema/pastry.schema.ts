@@ -23,7 +23,7 @@ export class Pastry {
     order: number;
 
     @Prop()
-    tags: string[];
+    tags: string;
 }
 
 export const pastrySchema = SchemaFactory.createForClass(Pastry);

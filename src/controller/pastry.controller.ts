@@ -63,7 +63,7 @@ export class PastryController {
     }
 
     @Delete('/:id')
-    async deletePastryById(@Res() response, @Param('id') pastryId: string){
+    async deletePastryById(@Res() response, @Param('id') pastryId: string) {
         try {
             const deletedPastry = await this.pastryService.deletePastry(pastryId);
             return response.status(HttpStatus.OK).json({
